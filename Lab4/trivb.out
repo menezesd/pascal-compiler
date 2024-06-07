@@ -1,0 +1,77 @@
+Symbol table level 0
+ 19386384        real  BASIC  basicdt   1          siz     8
+ 19386512     integer  BASIC  basicdt   0          siz     4
+ 19386640        char  BASIC  basicdt   2          siz     1
+ 19386768     boolean  BASIC  basicdt   3          siz     4
+ 19386896         exp  knd 5 0  typ 19387024  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 19387280       trexp  knd 5 0  typ 19387408  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 19387664         sin  knd 5 0  typ 19387792  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 19388048         cos  knd 5 0  typ 19388176  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 19388432       trsin  knd 5 0  typ 19388560  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 19388816        sqrt  knd 5 0  typ 19388944  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 19389200       round  knd 5 0  typ 19389328  lvl  0  siz     0  off     0
+(FUNCTION real
+          real)
+ 19389584      iround  knd 5 0  typ 19389712  lvl  0  siz     0  off     0
+(FUNCTION integer
+          real)
+ 19389968         ord  knd 5 0  typ 19390096  lvl  0  siz     0  off     0
+(FUNCTION integer
+          integer)
+ 19390352         new  knd 5 0  typ 19390480  lvl  0  siz     0  off     0
+(FUNCTION integer
+          integer)
+ 19390736       trnew  knd 5 0  typ 19390864  lvl  0  siz     0  off     0
+(FUNCTION integer
+          integer)
+ 19391120       write  knd 5 0  typ 19391248  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          char)
+ 19391504     writeln  knd 5 0  typ 19391632  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          char)
+ 19391888      writef  knd 5 0  typ 19392016  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          real)
+ 19392272    writelnf  knd 5 0  typ 19392400  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          real)
+ 19392656      writei  knd 5 0  typ 19392784  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          integer)
+ 19393040    writelni  knd 5 0  typ 19393168  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          integer)
+ 19393424        read  knd 5 0  typ 19393552  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          NULL)
+ 19393808      readln  knd 5 0  typ 19393936  lvl  0  siz     0  off     0
+(FUNCTION NULL
+          NULL)
+ 19394192         eof  knd 5 0  typ 19394320  lvl  0  siz     0  off     0
+(FUNCTION boolean
+          NULL)
+Symbol table level 1
+ 19412240           i  VAR    0 typ integer  lvl  1  siz     4  off     0
+ 19412368         lim  VAR    0 typ integer  lvl  1  siz     4  off     4
+yyparse result =        0
+(program graph1 (progn output)
+                (progn (:= lim 7)
+                       (progn (:= i 7)
+                              (label 0)
+                              (if (>= i 1)
+                                  (progn (funcall writeln '*')
+                                         (:= i (+ i -1))
+                                         (goto 0))))))

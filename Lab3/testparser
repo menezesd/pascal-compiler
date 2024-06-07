@@ -1,0 +1,11 @@
+rm lex.yy.o
+rm parser
+rm pprint.o
+rm printtoken.o
+rm symtab.o
+rm y.tab.o
+make parser
+clear
+parser < pasrectest.pas > pasrec.out
+parser < graph1.pas > graph1.out
+parser < trivb.pas > trivb.out

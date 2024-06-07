@@ -1,0 +1,54 @@
+Input (graph1.pas)
+
+	{ program 4.9 from Jensen & Wirth       -- file pastst.pas }
+
+	program graph1(output);
+	const d = 0.0625; {1/16, 16 lines for interval [x,x+1]}
+      	s = 32; {32 character widths for interval [y,y+1]}
+      	h = 34; {character position of x-axis}
+      	c = 6.28318; {2*pi}  lim = 32;
+	var x,y : real;  i,n : integer;
+	begin
+   		for i := 0 to lim do
+      		begin x := d*i; y := exp(-x)*sin(c*x);
+      		n := round(s*y) + h;
+      		repeat write(' ');  n := n-1
+      		until n=0;
+      		writeln('*')
+   			end
+	end.
+	
+Output
+
+	Started scanner test.
+	tokentype: 2 which: 19 	program
+	tokentype: 3 value: 	graph1
+	tokentype: 1 which: 4 	(
+	tokentype: 3 value: 	output
+	tokentype: 1 which: 5 	)
+	tokentype: 1 which: 2 	;
+	tokentype: 2 which: 4 	const
+	tokentype: 3 value: 	d
+	tokentype: 0 which: 6 	=
+	tokentype: 5 type: 	1 	6.250000e-02
+	tokentype: 1 which: 2 	;
+	tokentype: 3 value: 	s
+	tokentype: 0 which: 6 	=
+	tokentype: 5 type: 	0 	32
+	tokentype: 1 which: 2 	;
+	tokentype: 3 value: 	h
+	tokentype: 0 which: 6 	=
+	tokentype: 5 type: 	0 	34
+	tokentype: 1 which: 2 	;
+	tokentype: 3 value: 	c
+	tokentype: 0 which: 6 	=
+	tokentype: 5 type: 	1 	6.283180e+00
+	tokentype: 1 which: 2 	;
+	.....
+
+
+
+
+	lex1
+	123 45678 12
+	17 444
